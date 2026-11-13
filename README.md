@@ -15,13 +15,13 @@ L’absence de sauvegarde après rechargement est normale. Les doublons sont aut
 Le formulaire utilise novalidate : la validation doit être assurée par JavaScript.
 
 ## Comportement attendu et vérifications
-1. Au chargement : Clavier (5), Souris (8), Écran (3). Total : 16.
-2. En tapant « sou », seule Souris apparaît immédiatement, sans quitter le champ ni appuyer sur Entrée. « SOUR » fonctionne aussi. Le total reste celui du stock entier : 16.
-3. Une recherche « xyz » affiche « Aucun matériel trouvé ». Effacer la recherche réaffiche tout.
-4. Ajouter « Casque », quantité 2 : la nouvelle ligne apparaît immédiatement et le total devient 18. Les champs sont réinitialisés et la recherche est effacée.
-5. Ajouter ensuite « Câble », quantité 3 : le total devient 21.
-6. Un nom vide ou composé uniquement d’espaces avec une quantité 2 est refusé. Aucun élément ne doit être ajouté.
-7. Une quantité vide, nulle, négative ou décimale est refusée, même avec un nom valide. Le stock reste inchangé.
+1. Au chargement : Clavier (5), Souris (8), Écran (3). Total : 16. valide
+2. En tapant « sou », seule Souris apparaît immédiatement, sans quitter le champ ni appuyer sur Entrée. « SOUR » fonctionne aussi. Le total reste celui du stock entier : 16. valide
+3. Une recherche « xyz » affiche « Aucun matériel trouvé ». Effacer la recherche réaffiche tout.valide
+4. Ajouter « Casque », quantité 2 : la nouvelle ligne apparaît immédiatement et le total devient 18. Les champs sont réinitialisés et la recherche est effacée. valide
+5. Ajouter ensuite « Câble », quantité 3 : le total devient 21.   valide
+6. Un nom vide ou composé uniquement d’espaces avec une quantité 2 est refusé. Aucun élément ne doit être ajouté. valide
+7. Une quantité vide, nulle, négative ou décimale est refusée, même avec un nom valide. Le stock reste inchangé. valide
 
 ## Méthode
 - Reproduire le problème et noter le résultat attendu et obtenu.
